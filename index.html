@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+   
+    <button id="signIn" class="sbtn">Sign In</button>
+    <button id="signUp" class="sbtn">Sign Up</button>
+    
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" id="model1">
+          <span class="close" style="font-size: 40px;">&times;</span>
+           <div style="text-align: center;"><h1>Get Started</h1></div>
+           <hr>
+           <form>
+             <span>Full Name</span><br>
+             <input type="text" id="fullName" required placeholder="Enter Full Name"><br>
+             <span>Username</span><br>
+             <input type="text" id="UserName" required placeholder="Enter Username"><br>
+             <span>Password</span><br>
+             <input type="password" id="password" required placeholder="Enter Password"><br>
+             <span>Confirm Password</span><br>
+             <input type="password" id="confirmpassword" required placeholder="Confirm Password"><br>
+             <button type="submit" id="submit">Sign Up</button>
+           </form>
+        </div>
+
+        
+        <div class="modal-content" id="model2">
+            <span class="close" style="font-size: 40px;">&times;</span>
+            <div style="text-align: center;"><h1>Welcome Back!</h1></div>
+            <hr>
+            <form>
+               <span>Username</span><br>
+               <input type="text" id="UserName" required placeholder="Enter Username"><br>
+               <span>Password</span><br>
+               <input type="password" id="password" required placeholder="Enter Password"><br>
+               <button type="submit" id="submit">Sign Ip</button><br>
+               <div style="text-align: center; margin-top: 20px;"><h3>Not a member? <a href="#" style="text-decoration: none;">Sign Up</a></h3></div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

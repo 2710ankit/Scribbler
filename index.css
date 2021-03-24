@@ -15,7 +15,7 @@ body{
 }
 
 .modal {
-    
+    display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 10px; /* Location of the box */
@@ -38,8 +38,13 @@ body{
     width: 30%;
   }
   
-  #model1{
-    display: none;
+ #model1{
+   display: none;
+ }
+#model2{
+  display: none;
+  margin-top: 100px;
+  width: 25%;
 }
   /* The Close Button */
   .close {
@@ -83,7 +88,27 @@ body{
       margin-top: 10px;
 
   }
-  #model2{
-      margin-top: 100px;
-      width: 25%;
+  .pbtn{
+    color: black;
+    background-color: rgb(238, 226, 63);
+    height: 35px;
+    border: none;
+    margin-left: 15px;
+    font-weight: bold;
   }
+  #postsBtnDiv{
+    width: 250px;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+#model3{
+  width: 700px;
+}
+#postForm{
+  margin:0px 25px 0px 25px;
+}

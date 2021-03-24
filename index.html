@@ -12,14 +12,17 @@
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
    
-    <button id="signIn" class="sbtn">Sign In</button>
-    <button id="signUp" class="sbtn">Sign Up</button>
-    
+    <button id="signIn" class="sbtn" onclick="signInfun()">Sign In</button>
+    <button id="signUp" class="sbtn" onclick="signUpfun()">Sign Up</button>
+    <div id="postsBtnDiv">
+        <button id="allPosts" class="pbtn">All Posts</button>
+        <button id="createPosts" class="pbtn" onclick="postfun()">Create Posts</button>
+    </div>
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content" id="model1">
-          <span class="close" style="font-size: 40px;">&times;</span>
+          <span class="close" style="font-size: 40px;" id="modelCloseBtn" onclick="closeModelfun()">&times;</span>
            <div style="text-align: center;"><h1>Get Started</h1></div>
            <hr>
            <form>
@@ -37,7 +40,7 @@
 
         
         <div class="modal-content" id="model2">
-            <span class="close" style="font-size: 40px;">&times;</span>
+            <span class="close" style="font-size: 40px;" id="modelCloseBtn" onclick="closeModelfun()">&times;</span>
             <div style="text-align: center;"><h1>Welcome Back!</h1></div>
             <hr>
             <form>
@@ -46,11 +49,24 @@
                <span>Password</span><br>
                <input type="password" id="password" required placeholder="Enter Password"><br>
                <button type="submit" id="submit">Sign Ip</button><br>
-               <div style="text-align: center; margin-top: 20px;"><h3>Not a member? <a href="#" style="text-decoration: none;">Sign Up</a></h3></div>
+               <div style="text-align: center; margin-top: 20px;"><h3>Not a member? <a href="#" style="text-decoration: none;" onclick="signUpfun()">Sign Up</a></h3></div>
+            </form>
+        </div>
+        <div class="modal-content" id="model3">
+            <span class="close" style="font-size: 40px;" id="modelCloseBtn" onclick="closeModelfun()">&times;</span>
+            <div style="text-align: center;"><h1>Pen Your Post</h1></div>
+            <hr>
+            <form id="postForm"> 
+               <span>Title</span><br>
+               <input style="width: 40%;" type="text" id="title"><br>
+               <span>Description</span><br>
+               <textarea style="height:300px;width:100%;background-color:rgb(242, 242, 242) ;" id="description" required ></textarea><br>
+               
+               <div style="text-align: center; margin-top: 20px;"><button style="width:70px;">Create</button></div>
             </form>
         </div>
     </div>
-
+    <script src="index.js"></script>
 </body>
 
 </html>

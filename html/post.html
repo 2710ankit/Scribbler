@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\Ankit\Desktop\scribbler\font-awesome-4.7.0\css\font-awesome.css">
+    <link rel="stylesheet" href="C:\Users\Ankit\Desktop\scribbler\font-awesome-4.7.0\css\font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--Modals-->
+<div id="myModal" class="modal">
+
+  <!-- Get started modal content -->
+    <div class="modal-content" id="getStartedModal">
+      <span class="close" style="font-size: 40px;" id="modelCloseBtn" onclick="closeModelfun()">&times;</span>
+       <div style="text-align: center;"><h1>Get Started</h1></div>
+       <hr>
+       <form>
+         <span>Full Name</span><br>
+         <input type="text" id="fullName" required placeholder="Enter Full Name"><br>
+         <span>Username</span><br>
+         <input type="text" id="UserName" required placeholder="Enter Username"><br>
+         <span>Password</span><br>
+         <input type="password" id="password" required placeholder="Enter Password"><br>
+         <span>Confirm Password</span><br>
+         <input type="password" id="confirmpassword" required placeholder="Confirm Password"><br>
+         <button type="submit" id="submit">Sign Up</button>
+       </form>
+    </div>
+
+  <!--Welcome back modal content-->
+    <div class="modal-content" id="welcomeBackModal">
+        <span class="close" style="font-size: 40px;" id="modelCloseBtn" onclick="closeModelfun()">&times;</span>
+        <div style="text-align: center;"><h1>Welcome Back!</h1></div>
+        <hr>
+        <form>
+           <span>Username</span><br>
+           <input type="text" id="UserName" required placeholder="Enter Username"><br>
+           <span>Password</span><br>
+           <input type="password" id="password" required placeholder="Enter Password"><br>
+           <button type="submit" id="submit">Sign Ip</button><br>
+           <div style="text-align: center; margin-top: 20px;"><h3>Not a member? <a href="#" style="text-decoration: none;" onclick="signUpfun()">Sign Up</a></h3></div>
+        </form>
+    </div>
+</div>   
+
+<!-- LOGO and header -->
+<div class="header">
+    <button id="signIn" class="sbtn" onclick="signInfun()">Sign In</button>
+    <button id="signUp" class="sbtn" onclick="signUpfun()">Sign Up</button>
+    <a  class="logo-title">ScriBBler</a>
+    <p class="logo-middleText">Explore, Imagine, Create</p>
+</div>
+
+
+
+<div class="postContainer">
+    <h1 id="postHeading">The Legend jimi</h1>
+   
+    <!-- Hidden title for edit -->
+    <textarea type="text" id="postHeading_edit"></textarea>
+    <div class="postName">
+        <p id="name">JIMI</p>
+        <button id="edit" onclick="edit_post()">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+       
+        <!-- hidden button for save -->
+        <button id="save" onclick="save_post()">Save <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+    </div>
+    <p id="postBody">
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Ut ornare lectus sit amet est placerat in. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Turpis massa tincidunt dui ut ornare lectus sit amet. A diam sollicitudin tempor id eu nisl. Et netus et malesuada fames ac. Lobortis scelerisque fermentum dui faucibus in ornare quam. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Ultricies tristique nulla aliquet enim. Pretium viverra suspendisse potenti nullam ac tortor. Nibh venenatis cras sed felis eget velit aliquet. Diam quam nulla porttitor massa id neque. In massa tempor nec feugiat nisl pretium. Sem integer vitae justo eget magna fermentum. Sem viverra aliquet eget sit. In egestas erat imperdiet sed euismod nisi porta. Eleifend donec pretium vulputate sapien nec sagittis. Nibh cras pulvinar mattis nunc sed blandit. Tempus quam pellentesque nec nam. Amet risus nullam eget felis eget nunc lobortis. Nullam eget felis eget nunc lobortis. Feugiat in fermentum posuere urna nec tincidunt. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Dignissim sodales ut eu sem integer vitae justo eget. Placerat in egestas erat imperdiet sed euismod nisi porta. At volutpat diam ut venenatis tellus in metus vulputate eu. Eu non diam phasellus vestibulum. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Ut porttitor leo a diam sollicitudin tempor id. Amet volutpat consequat mauris nunc. Purus non enim praesent elementum facilisis. In est ante in nibh mauris cursus mattis molestie a. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Vestibulum lorem sed risus ultricies tristique nulla. Congue quisque egestas diam in arcu cursus euismod quis viverra. Nisi vitae suscipit tellus mauris a diam maecenas sed. Morbi tempus iaculis urna id volutpat lacus laoreet non. Elementum pulvinar etiam non quam lacus suspendisse. Vitae congue eu consequat ac felis donec. Libero enim sed faucibus turpis in eu. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Accumsan in nisl nisi scelerisque. Neque convallis a cras semper auctor neque vitae tempus quam. Ullamcorper sit amet risus nullam eget felis eget nunc. Mauris cursus mattis molestie a iaculis at erat pellentesque.
+
+    </p>
+    <!-- hidden body for edit -->
+    <textarea id="postBody_edit"></textarea>
+    <button id="like" onclick="like_post()"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Like</button>
+    <p id="likeCounter">Be first one to like this!</p>
+    <textarea id="commentData" placeholder="leave a comment..."></textarea><br>
+    <button id="commentBtn" onclick="post_comment()">Comment</button>
+    <h3 id="comment">ALL Comments</h3>
+    <div id="allComments">
+
+    </div>
+</div>
+
+
+
+<script src="../js/post.js"></script>
+</body>
+</html>

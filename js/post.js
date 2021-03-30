@@ -93,6 +93,6 @@ function post_comment(){
     var p= document.createElement('p');
     p.innerHTML=commentData.value;
     p.setAttribute('class','commentContent');
-    allComments.appendChild(p);
+    allComments.insertBefore(p, allComments.firstChild);
     
 }
